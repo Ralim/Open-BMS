@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name xt60)(type KiCad)(uri "$(KIPRJMOD)/xt60.pretty")(options "")(descr ""))
+  (lib (name BMSFootprints)(type KiCad)(uri "$(KIPRJMOD)/../BMSFootprints.pretty")(options "")(descr ""))
+)
