@@ -10,7 +10,6 @@ LIBS:display
 LIBS:opto
 LIBS:contrib
 LIBS:msp430
-LIBS:openbmsriser
 LIBS:switches
 LIBS:Front Panel-cache
 EELAYER 25 0
@@ -18,14 +17,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "OpenBMS Front Panel"
+Date "2017-07-08"
+Rev "V1.0"
+Comp "RalimTEk.com"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Designed By Ben V. Brown"
 $EndDescr
 $Comp
 L MSP430G2755IDA38 U101
@@ -429,6 +428,196 @@ F 3 "" H 7400 1350 50  0001 C CNN
 $EndComp
 Text Notes 6200 3925 0    60   ~ 0
 Only P1 and P2 have IRQ
+Text Label 6550 2725 0    60   ~ 0
+~SD
+Text Label 6550 2625 0    60   ~ 0
+FETSOFF
+Text Label 6550 2525 0    60   ~ 0
+~INT
+Text Notes 4400 4400 0    60   ~ 0
+FETSOFF -> High turns all fets on (charge/discharge)\nINT -> Interrupt from the BMS to alert us to status change\n
+Text Label 4250 2525 2    60   ~ 0
+CLK
+Text Label 9425 3825 2    60   ~ 0
+~LCD_RESET
+Text Label 6550 2375 0    60   ~ 0
+~LCD_RESET
+$Comp
+L C C101
+U 1 1 5960BD1E
+P 3125 4025
+F 0 "C101" H 3150 4125 50  0000 L CNN
+F 1 "C" H 3150 3925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3163 3875 50  0001 C CNN
+F 3 "" H 3125 4025 50  0001 C CNN
+	1    3125 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR09
+U 1 1 5960BDEA
+P 3125 3875
+F 0 "#PWR09" H 3125 3725 50  0001 C CNN
+F 1 "VDD" H 3125 4025 50  0000 C CNN
+F 2 "" H 3125 3875 50  0001 C CNN
+F 3 "" H 3125 3875 50  0001 C CNN
+	1    3125 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5960C1AB
+P 3125 4175
+F 0 "#PWR010" H 3125 3925 50  0001 C CNN
+F 1 "GND" H 3125 4025 50  0000 C CNN
+F 2 "" H 3125 4175 50  0001 C CNN
+F 3 "" H 3125 4175 50  0001 C CNN
+	1    3125 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C102
+U 1 1 5960C224
+P 3375 4025
+F 0 "C102" H 3400 4125 50  0000 L CNN
+F 1 "C" H 3400 3925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3413 3875 50  0001 C CNN
+F 3 "" H 3375 4025 50  0001 C CNN
+	1    3375 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR011
+U 1 1 5960C22A
+P 3375 3875
+F 0 "#PWR011" H 3375 3725 50  0001 C CNN
+F 1 "VDD" H 3375 4025 50  0000 C CNN
+F 2 "" H 3375 3875 50  0001 C CNN
+F 3 "" H 3375 3875 50  0001 C CNN
+	1    3375 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 5960C230
+P 3375 4175
+F 0 "#PWR012" H 3375 3925 50  0001 C CNN
+F 1 "GND" H 3375 4025 50  0000 C CNN
+F 2 "" H 3375 4175 50  0001 C CNN
+F 3 "" H 3375 4175 50  0001 C CNN
+	1    3375 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C103
+U 1 1 5960C3F2
+P 3625 4025
+F 0 "C103" H 3650 4125 50  0000 L CNN
+F 1 "C" H 3650 3925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3663 3875 50  0001 C CNN
+F 3 "" H 3625 4025 50  0001 C CNN
+	1    3625 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR013
+U 1 1 5960C3F8
+P 3625 3875
+F 0 "#PWR013" H 3625 3725 50  0001 C CNN
+F 1 "VDD" H 3625 4025 50  0000 C CNN
+F 2 "" H 3625 3875 50  0001 C CNN
+F 3 "" H 3625 3875 50  0001 C CNN
+	1    3625 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5960C3FE
+P 3625 4175
+F 0 "#PWR014" H 3625 3925 50  0001 C CNN
+F 1 "GND" H 3625 4025 50  0000 C CNN
+F 2 "" H 3625 4175 50  0001 C CNN
+F 3 "" H 3625 4175 50  0001 C CNN
+	1    3625 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C104
+U 1 1 5960C6CC
+P 3875 4025
+F 0 "C104" H 3900 4125 50  0000 L CNN
+F 1 "C" H 3900 3925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3913 3875 50  0001 C CNN
+F 3 "" H 3875 4025 50  0001 C CNN
+	1    3875 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR015
+U 1 1 5960C6D2
+P 3875 3875
+F 0 "#PWR015" H 3875 3725 50  0001 C CNN
+F 1 "VDD" H 3875 4025 50  0000 C CNN
+F 2 "" H 3875 3875 50  0001 C CNN
+F 3 "" H 3875 3875 50  0001 C CNN
+	1    3875 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 5960C6D8
+P 3875 4175
+F 0 "#PWR016" H 3875 3925 50  0001 C CNN
+F 1 "GND" H 3875 4025 50  0000 C CNN
+F 2 "" H 3875 4175 50  0001 C CNN
+F 3 "" H 3875 4175 50  0001 C CNN
+	1    3875 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J103
+U 1 1 5960D653
+P 7600 1600
+F 0 "J103" H 7600 1870 50  0000 C CNN
+F 1 "TEST_1P" H 7600 1800 50  0000 C CNN
+F 2 "conn-test:TEST-SMD-SMALL" H 7800 1600 50  0001 C CNN
+F 3 "" H 7800 1600 50  0001 C CNN
+	1    7600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J104
+U 1 1 5960D771
+P 7700 1600
+F 0 "J104" H 7700 1870 50  0000 C CNN
+F 1 "TEST_1P" H 7700 1800 50  0000 C CNN
+F 2 "conn-test:TEST-SMD-SMALL" H 7900 1600 50  0001 C CNN
+F 3 "" H 7900 1600 50  0001 C CNN
+	1    7700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J105
+U 1 1 5960D7E3
+P 7800 1600
+F 0 "J105" H 7800 1870 50  0000 C CNN
+F 1 "TEST_1P" H 7800 1800 50  0000 C CNN
+F 2 "conn-test:TEST-SMD-SMALL" H 8000 1600 50  0001 C CNN
+F 3 "" H 8000 1600 50  0001 C CNN
+	1    7800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J106
+U 1 1 5960D854
+P 7900 1600
+F 0 "J106" H 7900 1870 50  0000 C CNN
+F 1 "TEST_1P" H 7900 1800 50  0000 C CNN
+F 2 "conn-test:TEST-SMD-SMALL" H 8100 1600 50  0001 C CNN
+F 3 "" H 8100 1600 50  0001 C CNN
+	1    7900 1600
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3750 2375 4250 2375
 Wire Wire Line
@@ -532,14 +721,20 @@ Wire Wire Line
 	6550 3025 8275 3025
 Wire Wire Line
 	8275 3025 8275 3450
-Text Label 6550 2725 0    60   ~ 0
-~SD
-Text Label 6550 2625 0    60   ~ 0
-FETSOFF
-Text Label 6550 2525 0    60   ~ 0
-~INT
-Text Notes 4400 4400 0    60   ~ 0
-FETSOFF -> High turns all fets on (charge/discharge)\nINT -> Interrupt from the BMS to alert us to status change\n
-Text Label 4250 2525 2    60   ~ 0
-CLK
+Wire Wire Line
+	6550 1675 7600 1675
+Wire Wire Line
+	7600 1675 7600 1600
+Wire Wire Line
+	6550 1775 7700 1775
+Wire Wire Line
+	7700 1775 7700 1600
+Wire Wire Line
+	6550 1875 7800 1875
+Wire Wire Line
+	7800 1875 7800 1600
+Wire Wire Line
+	6550 1975 7900 1975
+Wire Wire Line
+	7900 1975 7900 1600
 $EndSCHEMATC
