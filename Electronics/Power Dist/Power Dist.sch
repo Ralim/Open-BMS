@@ -1,0 +1,309 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mechanical
+LIBS:Power Dist-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Mounting_Hole MK1
+U 1 1 59375D19
+P 1300 1200
+F 0 "MK1" H 1300 1400 50  0000 C CNN
+F 1 "Mounting_Hole" H 1300 1325 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 1300 1200 50  0001 C CNN
+F 3 "" H 1300 1200 50  0001 C CNN
+	1    1300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole MK5
+U 1 1 59375E2B
+P 1900 1600
+F 0 "MK5" H 1900 1800 50  0000 C CNN
+F 1 "Mounting_Hole" H 1900 1725 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 1900 1600 50  0001 C CNN
+F 3 "" H 1900 1600 50  0001 C CNN
+	1    1900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole MK2
+U 1 1 59375E8B
+P 1300 1600
+F 0 "MK2" H 1300 1800 50  0000 C CNN
+F 1 "Mounting_Hole" H 1300 1725 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 1300 1600 50  0001 C CNN
+F 3 "" H 1300 1600 50  0001 C CNN
+	1    1300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole MK6
+U 1 1 59375F4E
+P 1900 1200
+F 0 "MK6" H 1900 1400 50  0000 C CNN
+F 1 "Mounting_Hole" H 1900 1325 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 1900 1200 50  0001 C CNN
+F 3 "" H 1900 1200 50  0001 C CNN
+	1    1900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J101
+U 1 1 597C1E4B
+P 3250 1225
+F 0 "J101" H 3250 1375 50  0000 C CNN
+F 1 "CONN_01X02" V 3350 1225 50  0000 C CNN
+F 2 "XTConnectors:XT30PW_Female" H 3250 1225 50  0001 C CNN
+F 3 "" H 3250 1225 50  0001 C CNN
+	1    3250 1225
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J102
+U 1 1 597C1E85
+P 3250 1775
+F 0 "J102" H 3250 1925 50  0000 C CNN
+F 1 "CONN_01X02" V 3350 1775 50  0000 C CNN
+F 2 "XTConnectors:XT30PW_Male" H 3250 1775 50  0001 C CNN
+F 3 "" H 3250 1775 50  0001 C CNN
+	1    3250 1775
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J103
+U 1 1 597C1EFD
+P 3250 2325
+F 0 "J103" H 3250 2475 50  0000 C CNN
+F 1 "CONN_01X02" V 3350 2325 50  0000 C CNN
+F 2 "XTConnectors:XT30PW_Male" H 3250 2325 50  0001 C CNN
+F 3 "" H 3250 2325 50  0001 C CNN
+	1    3250 2325
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J104
+U 1 1 597C1FC0
+P 3250 2875
+F 0 "J104" H 3250 3025 50  0000 C CNN
+F 1 "CONN_01X02" V 3350 2875 50  0000 C CNN
+F 2 "XTConnectors:XT30PW_Male" H 3250 2875 50  0001 C CNN
+F 3 "" H 3250 2875 50  0001 C CNN
+	1    3250 2875
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 2925 4000 2925
+Wire Wire Line
+	4000 1275 4000 3375
+Wire Wire Line
+	4000 1275 3450 1275
+Wire Wire Line
+	3450 1175 3900 1175
+Wire Wire Line
+	3900 1175 3900 3475
+Wire Wire Line
+	3900 2825 3450 2825
+Wire Wire Line
+	3450 2275 3900 2275
+Connection ~ 3900 2275
+Wire Wire Line
+	3450 1725 3900 1725
+Connection ~ 3900 1725
+Wire Wire Line
+	3450 1825 4000 1825
+Connection ~ 4000 1825
+Wire Wire Line
+	3450 2375 4000 2375
+Connection ~ 4000 2375
+$Comp
+L CONN_01X04 J105
+U 1 1 597C2133
+P 5050 1350
+F 0 "J105" H 5050 1600 50  0000 C CNN
+F 1 "CONN_01X04" V 5150 1350 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_S04B-XH-A_04x2.50mm_Angled" H 5050 1350 50  0001 C CNN
+F 3 "" H 5050 1350 50  0001 C CNN
+	1    5050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 J106
+U 1 1 597C21C0
+P 5050 1875
+F 0 "J106" H 5050 2125 50  0000 C CNN
+F 1 "CONN_01X04" V 5150 1875 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_S04B-XH-A_04x2.50mm_Angled" H 5050 1875 50  0001 C CNN
+F 3 "" H 5050 1875 50  0001 C CNN
+	1    5050 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 J107
+U 1 1 597C21FA
+P 5050 2400
+F 0 "J107" H 5050 2650 50  0000 C CNN
+F 1 "CONN_01X04" V 5150 2400 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_S04B-XH-A_04x2.50mm_Angled" H 5050 2400 50  0001 C CNN
+F 3 "" H 5050 2400 50  0001 C CNN
+	1    5050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 J108
+U 1 1 597C2256
+P 5050 2925
+F 0 "J108" H 5050 3175 50  0000 C CNN
+F 1 "CONN_01X04" V 5150 2925 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_S04B-XH-A_04x2.50mm_Angled" H 5050 2925 50  0001 C CNN
+F 3 "" H 5050 2925 50  0001 C CNN
+	1    5050 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2775 4500 2775
+Wire Wire Line
+	4500 1200 4500 3325
+Wire Wire Line
+	4500 1200 4850 1200
+Wire Wire Line
+	4850 1300 4450 1300
+Wire Wire Line
+	4450 1300 4450 3425
+Wire Wire Line
+	4450 2875 4850 2875
+Wire Wire Line
+	4850 2975 4400 2975
+Wire Wire Line
+	4400 1400 4400 3525
+Wire Wire Line
+	4400 1400 4850 1400
+Wire Wire Line
+	4850 3075 4350 3075
+Wire Wire Line
+	4350 1500 4350 3625
+Wire Wire Line
+	4350 1500 4850 1500
+Wire Wire Line
+	4850 2025 4350 2025
+Connection ~ 4350 2025
+Wire Wire Line
+	4850 1925 4400 1925
+Connection ~ 4400 1925
+Wire Wire Line
+	4850 1825 4450 1825
+Connection ~ 4450 1825
+Wire Wire Line
+	4850 1725 4500 1725
+Connection ~ 4500 1725
+Wire Wire Line
+	4850 2250 4500 2250
+Connection ~ 4500 2250
+Wire Wire Line
+	4850 2350 4450 2350
+Connection ~ 4450 2350
+Wire Wire Line
+	4850 2450 4400 2450
+Connection ~ 4400 2450
+Wire Wire Line
+	4850 2550 4350 2550
+Connection ~ 4350 2550
+Text Label 3900 1175 0    60   ~ 0
+GND
+Text Label 4350 1500 1    60   ~ 0
+GND
+Text Label 4000 1275 0    60   ~ 0
+12V
+Text Label 4500 1200 1    60   ~ 0
+12V
+Text Label 4400 1400 1    60   ~ 0
+1S
+Text Label 4450 1300 1    60   ~ 0
+2S
+Connection ~ 4500 1200
+Connection ~ 4450 1300
+Connection ~ 4400 1400
+Connection ~ 4350 1500
+Connection ~ 4000 1275
+Connection ~ 3900 1175
+$Comp
+L CONN_01X02 J109
+U 1 1 597C2E32
+P 3250 3425
+F 0 "J109" H 3250 3575 50  0000 C CNN
+F 1 "CONN_01X02" V 3350 3425 50  0000 C CNN
+F 2 "XTConnectors:XT30" H 3250 3425 50  0001 C CNN
+F 3 "" H 3250 3425 50  0001 C CNN
+	1    3250 3425
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 3375 3450 3375
+Connection ~ 4000 2925
+Wire Wire Line
+	3900 3475 3450 3475
+Connection ~ 3900 2825
+$Comp
+L CONN_01X04 J110
+U 1 1 597C2FB3
+P 5050 3475
+F 0 "J110" H 5050 3725 50  0000 C CNN
+F 1 "CONN_01X04" V 5150 3475 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 5050 3475 50  0001 C CNN
+F 3 "" H 5050 3475 50  0001 C CNN
+	1    5050 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3325 4850 3325
+Connection ~ 4500 2775
+Wire Wire Line
+	4450 3425 4850 3425
+Connection ~ 4450 2875
+Wire Wire Line
+	4400 3525 4850 3525
+Connection ~ 4400 2975
+Wire Wire Line
+	4350 3625 4850 3625
+Connection ~ 4350 3075
+$EndSCHEMATC

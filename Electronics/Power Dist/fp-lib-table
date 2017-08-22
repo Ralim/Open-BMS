@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ServoConnectors)(type KiCad)(uri "$(KIPRJMOD)/ServoConnectors.pretty")(options "")(descr ""))
+  (lib (name conn-test)(type KiCad)(uri "$(KIPRJMOD)/conn-test.pretty")(options "")(descr ""))
+)

@@ -51,3 +51,5 @@ Front Panel Code/OpenBMS/.launches/OpenBMS.launch
 *.prefs
 Front Panel Code/OpenBMS/targetConfigs/readme.txt
 Front Panel Code/RemoteSystemsTempFiles/
+Electronics/Power Dist/Gerbers/
+*.zip
