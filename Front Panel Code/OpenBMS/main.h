@@ -12,6 +12,7 @@
 #include "setup.h"
 #include "i2c.h"
 #include "ISL94202.h"
+#include "UC1701.h"
 #ifndef NDEBUG
 // If debugger is attached and software breakpoints are enabled, DEBUG_BREAK will pause execution
 #define DEBUG_BREAK _op_code(0x4343)

@@ -71,8 +71,8 @@ void TI_USCI_I2C_receive(unsigned char byteCount, unsigned char *field){
   } else if ( byteCount > 1 ) {
     byteCtr = byteCount - 2 ;
     UCB0CTL1 |= UCTXSTT;                      // I2C start condition
-  } else
-    while (1);                                // illegal parameter
+  }// else
+   // while (1);                                // illegal parameter
 }
 
 //------------------------------------------------------------------------------
@@ -146,7 +146,13 @@ __interrupt void USCIAB0RX_ISR(void)
 #pragma vector = USCIAB0TX_VECTOR
 __interrupt void USCIAB0TX_ISR(void)
 {
-  if (IFG2 & UCB0RXIFG){
+    if(IFG2 &UCA0RXIFG || IFG2 & UCA0TXIFG)
+    {
+
+        IFG2 &= ~UCA0RXIFG;
+        IFG2 &= ~UCA0TXIFG;
+    }
+    else  if (IFG2 & UCB0RXIFG){
     if ( byteCtr == 0 ){
       UCB0CTL1 |= UCTXSTP;                    // I2C stop condition
       *TI_receive_field = UCB0RXBUF;

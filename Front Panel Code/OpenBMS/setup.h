@@ -9,7 +9,6 @@
 #define SETUP_H_
 #include <msp430.h>
 #include "hardware.h"
-#include "uart.h"
 #include "i2c.h"
 void setup();
 
