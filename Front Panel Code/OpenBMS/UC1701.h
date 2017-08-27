@@ -21,5 +21,7 @@ void lcd_sendCommand(uint8_t d);
 void lcd_printChar(char c);
 void lcd_setCursor(uint8_t column, uint8_t line);
 void lcd_print(char* string);
+void lcd_drawNumber(uint16_t number, uint8_t places);
+void lcd_drawVoltage(uint16_t mV);
 
 #endif /* UC1701_H_ */

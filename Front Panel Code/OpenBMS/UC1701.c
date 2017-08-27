@@ -166,7 +166,37 @@ void lcd_print(char* string)
 {
     while (string[0])
     {
-        lcd_printChar (string[0]);
+        lcd_printChar(string[0]);
         string++;
     }
+}
+
+void lcd_drawNumber(uint16_t number, uint8_t places)
+{
+
+}
+void lcd_drawVoltage(uint16_t mV)
+{
+    //We want to draw in a voltage that can be 0mV to 65V.
+    //We use fixed placements for everything, and just suppress the first leading zero
+    char buffer[7];
+    buffer[2] = '.';
+    buffer[6] = 'V';
+    buffer[5] = '0' + mV % 10;
+    mV /= 10;
+    buffer[4] = '0' + mV % 10;
+    mV /= 10;
+    buffer[3] = '0' + mV % 10;
+    mV /= 10;
+    buffer[1] = '0' + mV % 10;
+    mV /= 10;
+    buffer[0] = mV ? '0' + mV % 10 : ' ';
+    lcd_printChar(buffer[0]);
+    lcd_printChar(buffer[1]);
+    lcd_printChar(buffer[2]);
+    lcd_printChar(buffer[3]);
+    lcd_printChar(buffer[4]);
+    lcd_printChar(buffer[5]);
+    lcd_printChar(buffer[6]);
+
 }
