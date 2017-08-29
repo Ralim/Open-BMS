@@ -9,7 +9,7 @@
 #define GUI_H_
 #include "UC1701.h"
 
-void drawBatteryVoltage(uint8_t row, uint8_t column,uint8_t cellNumber);
+void gui_drawMainScreen();
 
 
 
