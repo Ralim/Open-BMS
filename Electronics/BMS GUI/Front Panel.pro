@@ -40,5 +40,5 @@ LibName8=display
 LibName9=opto
 LibName10=contrib
 LibName11=msp430
-LibName12=C:/Users/Ben V. Brown/Documents/GitHub/Open-BMS/Electronics/openbmsriser
+LibName12=../openbmsriser
 LibName13=switches

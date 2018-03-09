@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name BMSFootprints)(type KiCad)(uri "C:/Users/Ben V. Brown/Documents/GitHub/Open-BMS/Electronics/BMSFootprints.pretty")(options "")(descr ""))
+  (lib (name BMSFootprints)(type KiCad)(uri "../BMSFootprints.pretty")(options "")(descr ""))
 )
