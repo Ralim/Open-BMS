@@ -59,5 +59,5 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=ISL94202
-LibName31=C:/Users/Ben V. Brown/Documents/GitHub/Open-BMS/openbmsriser
+LibName31=../openbmsriser
 LibName32=mechanical
